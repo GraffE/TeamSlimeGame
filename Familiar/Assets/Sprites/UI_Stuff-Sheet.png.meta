@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: af4128ecd6f4aa04a83c4b12683b18a5
+guid: 2315bc7d7e1ee415ea70fece914dbdf4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -63,7 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -101,29 +101,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fennel_124Sprite_0
+      name: UI_Stuff-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 124
-        height: 124
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3c9cc329c2b4cb468ce3f606aea3e84
-      internalID: -1814942152
+      spriteID: 808becc57aea24f81ba377b916b5eeab
+      internalID: -1487822229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fennel_124Sprite_1
+      name: UI_Stuff-Sheet_1
       rect:
         serializedVersion: 2
-        x: 124
+        x: 64
         y: 0
-        width: 124
-        height: 124
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b6730907eaf5824788e0ab048b52911
-      internalID: 1138130433
+      spriteID: 6b66c503ee3b3425da56a691c6974157
+      internalID: 604081141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fennel_124Sprite_2
+      name: UI_Stuff-Sheet_2
       rect:
         serializedVersion: 2
-        x: 248
+        x: 128
         y: 0
-        width: 124
-        height: 124
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3dc5a9ba54db4c4da910e516cf72888
-      internalID: 398848922
+      spriteID: cc70d594b0d434411b8bf64628a81a88
+      internalID: -83353328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fennel_124Sprite_3
+      name: UI_Stuff-Sheet_3
       rect:
         serializedVersion: 2
-        x: 372
+        x: 192
         y: 0
-        width: 124
-        height: 124
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15e70927461e1c64b88ec48b71c03d19
-      internalID: 368967105
+      spriteID: a58de198ffc8c48d2b0753d0914dd175
+      internalID: 282450406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fennel_124Sprite_4
+      name: UI_Stuff-Sheet_4
       rect:
         serializedVersion: 2
-        x: 496
+        x: 256
         y: 0
-        width: 124
-        height: 124
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,71 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83ef8eb2ee0db3d408a6e519ba47589e
-      internalID: 683128205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fennel_124Sprite_5
-      rect:
-        serializedVersion: 2
-        x: 620
-        y: 0
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f94f8c7e1a63d84e82ad7d2fd908319
-      internalID: 1392042791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fennel_124Sprite_6
-      rect:
-        serializedVersion: 2
-        x: 744
-        y: 0
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d14f7971c6616b8469090c86e7d2fac7
-      internalID: 289021733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fennel_124Sprite_7
-      rect:
-        serializedVersion: 2
-        x: 868
-        y: 0
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6652c5859194c540adfff5c683c03a3
-      internalID: 649854042
+      spriteID: ff2ed755d80f6431193e2102dea2b15b
+      internalID: -1862477978
       vertices: []
       indices: 
       edges: []
@@ -295,14 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fennel_124Sprite_7: 649854042
-      Fennel_124Sprite_5: 1392042791
-      Fennel_124Sprite_4: 683128205
-      Fennel_124Sprite_1: 1138130433
-      Fennel_124Sprite_3: 368967105
-      Fennel_124Sprite_2: 398848922
-      Fennel_124Sprite_6: 289021733
-      Fennel_124Sprite_0: -1814942152
+      UI_Stuff-Sheet_0: -1487822229
+      UI_Stuff-Sheet_4: -1862477978
+      UI_Stuff-Sheet_3: 282450406
+      UI_Stuff-Sheet_1: 604081141
+      UI_Stuff-Sheet_2: -83353328
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
