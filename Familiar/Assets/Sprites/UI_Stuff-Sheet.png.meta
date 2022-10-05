@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 808becc57aea24f81ba377b916b5eeab
-      internalID: -1487822229
+      spriteID: 675de45f6d65b4492a6e71a0ae43ad9f
+      internalID: -1442999224
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b66c503ee3b3425da56a691c6974157
-      internalID: 604081141
+      spriteID: 0ae47e5128c0849dea179e9a7f61a8e2
+      internalID: -1721036941
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc70d594b0d434411b8bf64628a81a88
-      internalID: -83353328
+      spriteID: ceada07a19c9c4d2591125727375feb0
+      internalID: -1259681317
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a58de198ffc8c48d2b0753d0914dd175
-      internalID: 282450406
+      spriteID: 53c3920c61fed4a3b9cd3d6db999fef8
+      internalID: -1160485381
       vertices: []
       indices: 
       edges: []
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff2ed755d80f6431193e2102dea2b15b
-      internalID: -1862477978
+      spriteID: 9b25e401d6a08454189269447f85f89a
+      internalID: 677919522
       vertices: []
       indices: 
       edges: []
@@ -220,11 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UI_Stuff-Sheet_0: -1487822229
-      UI_Stuff-Sheet_4: -1862477978
-      UI_Stuff-Sheet_3: 282450406
-      UI_Stuff-Sheet_1: 604081141
-      UI_Stuff-Sheet_2: -83353328
+      UI_Stuff-Sheet_0: -1442999224
+      UI_Stuff-Sheet_4: 677919522
+      UI_Stuff-Sheet_3: -1160485381
+      UI_Stuff-Sheet_1: -1721036941
+      UI_Stuff-Sheet_2: -1259681317
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
