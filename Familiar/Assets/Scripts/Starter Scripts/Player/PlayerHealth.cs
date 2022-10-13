@@ -36,6 +36,10 @@ public class PlayerHealth : MonoBehaviour
 
     private PlayerMovement playerMovement;
 
+    public Sprite HeartSprite;
+
+    public Sprite HurtSprite;
+
     void Start()
     {
        SetUpHealth();
@@ -107,7 +111,7 @@ public class PlayerHealth : MonoBehaviour
         }
         for (int i = 0; i < value; i++)
         {
-            TempHearts[currentHealth - 1].GetComponent<Image>().color = Color.black;
+            TempHearts[currentHealth - 1].GetComponent<Image>().sprite = HurtSprite;
             TempHearts.RemoveAt(TempHearts.Count - 1);
             currentHealth--;
         }
@@ -128,7 +132,7 @@ public class PlayerHealth : MonoBehaviour
         for (int i = 0; i < value; i++)
         {
             var temp = Hearts[currentHealth];
-            temp.GetComponent<Image>().color = Color.white;
+            temp.GetComponent<Image>().sprite = HeartSprite;
             TempHearts.Add(temp);
             currentHealth++;
         }
