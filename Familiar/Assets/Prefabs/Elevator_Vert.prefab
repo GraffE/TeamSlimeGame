@@ -192,7 +192,7 @@ MonoBehaviour:
   pointA: {fileID: 0}
   pointB: {fileID: 0}
   isRight: 1
-  speed: 0.3
+  speed: 0.4
 --- !u!1 &8681976584800916248
 GameObject:
   m_ObjectHideFlags: 0
