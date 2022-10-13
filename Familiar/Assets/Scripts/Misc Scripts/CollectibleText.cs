@@ -6,13 +6,13 @@ using TMPro;
 
 public class CollectibleText : MonoBehaviour
 {
-    private TMP_Text collectibles;
+    private Text collectibles;
     public static int numCollectibles;
 
     // Start is called before the first frame update
     void Start()
     {
-        collectibles = GetComponent<TMP_Text> ();
+        collectibles = GetComponent<Text> ();
     }
 
     // Update is called once per frame
