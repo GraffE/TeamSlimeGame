@@ -43,6 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Skies
+    uniqueID: 1561053047
+    locked: 0
   - name: background
     uniqueID: 46637121
     locked: 0
