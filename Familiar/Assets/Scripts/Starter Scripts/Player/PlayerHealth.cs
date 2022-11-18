@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
 {
     [Header("Health")]
     [Tooltip("The max health the player can have")]
-    public int maxHealth = 100;
+    public int maxHealth;
 
     [Tooltip("The current health the player has")]
     public int currentHealth;
@@ -52,12 +52,25 @@ public class PlayerHealth : MonoBehaviour
         {
             Hearts.Clear();
             TempHearts.Clear();
-            foreach (Transform child in HealthBarSegments.transform)
+            Hearts.Add(HealthBarSegments.transform.GetChild(0).gameObject);
+            TempHearts.Add(HealthBarSegments.transform.GetChild(0).gameObject);
+            Hearts.Add(HealthBarSegments.transform.GetChild(1).gameObject);
+            TempHearts.Add(HealthBarSegments.transform.GetChild(1).gameObject);
+            Hearts.Add(HealthBarSegments.transform.GetChild(2).gameObject);
+            TempHearts.Add(HealthBarSegments.transform.GetChild(2).gameObject);
+
+            /*TempHearts[0].GetComponent<Image>().sprite = HeartSprite;
+            TempHearts[1].GetComponent<Image>().sprite = HeartSprite;
+            TempHearts[2].GetComponent<Image>().sprite = HeartSprite;
+            Hearts[0].GetComponent<Image>().sprite = HeartSprite;
+            Hearts[1].GetComponent<Image>().sprite = HeartSprite;
+            Hearts[2].GetComponent<Image>().sprite = HeartSprite;*/
+            /*foreach (Transform child in HealthBarSegments.transform)
             {
                 child.gameObject.GetComponent<Image>().color = Color.white;//This makes the color to white, you can make this a public variable if you want to change it
                 Hearts.Add(child.gameObject);
                 TempHearts.Add(child.gameObject);
-            }
+            }*/
             currentHealth = TempHearts.Count;
         }
         else
@@ -111,7 +124,7 @@ public class PlayerHealth : MonoBehaviour
         }
         for (int i = 0; i < value; i++)
         {
-            TempHearts[currentHealth - 1].GetComponent<Image>().sprite = HurtSprite;
+            TempHearts[currentHealth - 1].GetComponent<SpriteRenderer>().sprite = HurtSprite;
             TempHearts.RemoveAt(TempHearts.Count - 1);
             currentHealth--;
         }
@@ -132,7 +145,7 @@ public class PlayerHealth : MonoBehaviour
         for (int i = 0; i < value; i++)
         {
             var temp = Hearts[currentHealth];
-            temp.GetComponent<Image>().sprite = HeartSprite;
+            temp.GetComponent<SpriteRenderer>().sprite = HeartSprite;
             TempHearts.Add(temp);
             currentHealth++;
         }
@@ -144,7 +157,7 @@ public class PlayerHealth : MonoBehaviour
         {
             for (int i = 0; i < Hearts.Count; i++)
             {
-                Hearts[i].GetComponent<Image>().color = Color.white;
+                Hearts[i].GetComponent<SpriteRenderer>().sprite = HeartSprite;
             }
 
             TempHearts.Clear();

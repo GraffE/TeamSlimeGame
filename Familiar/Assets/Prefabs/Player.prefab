@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7793084983903948113}
   - component: {fileID: 7793084983903948116}
   - component: {fileID: 7793084983903948117}
-  - component: {fileID: 7793084983903948118}
   - component: {fileID: 7793084983903948119}
   m_Layer: 0
   m_Name: Player
@@ -127,27 +126,6 @@ MonoBehaviour:
   useHealthBar: 0
   HeartSprite: {fileID: -1259681317, guid: 2315bc7d7e1ee415ea70fece914dbdf4, type: 3}
   HurtSprite: {fileID: -1160485381, guid: 2315bc7d7e1ee415ea70fece914dbdf4, type: 3}
---- !u!114 &7793084983903948118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7793084983903948112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab016ef86d2a5e143be1580af9e24830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 200
-  currentHealth: 100
-  HealthBarSegments: {fileID: 0}
-  HealthBar: {fileID: 0}
-  isSegmented: 0
-  allowOverHealing: 0
-  useHealthBar: 1
-  HeartSprite: {fileID: 0}
-  HurtSprite: {fileID: 0}
 --- !u!95 &7793084983903948119
 Animator:
   serializedVersion: 4
