@@ -57,6 +57,8 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     public float rayLength = 0;
 
+    public bool right = true;
+
     // Update is called once per frame
     void Start()
     {
@@ -151,7 +153,7 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleAttackAnimation(float HorizontalMovement, float VerticleMovement)
     {
-        if (Input.GetKey(KeyCode.Mouse0) && !disabled)
+        if (Input.GetButton("Submit") && !disabled)
         {
             if (!PlayerAnimator.GetBool("isAttacking"))
             {
@@ -268,11 +270,13 @@ public class PlayerMovement : MonoBehaviour
         {
             SpriteRenderer PlayerVector = PlayerAnimator.gameObject.GetComponent<SpriteRenderer>();
             PlayerVector.flipX = !isFlipped;
+            right = false;
         }
         else if (HorizontalVelocity > 0)
         {
             SpriteRenderer PlayerVector = PlayerAnimator.gameObject.GetComponent<SpriteRenderer>();
             PlayerVector.flipX = isFlipped;
+            right = true;
         }
     }
 

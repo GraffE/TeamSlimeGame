@@ -12,6 +12,7 @@ public class Weapon : MonoBehaviour
     }
     public WeaponType weaponType = WeaponType.Melee;
 
+    private PlayerMovement playerDirection;
     private float startTime;
     private bool projectileStart = false;
     private Vector3 startPosition;
@@ -31,11 +32,15 @@ public class Weapon : MonoBehaviour
     public float projectileLifeTime = 2.0f;
     // Start is called before the first frame update
 
+    private SpriteRenderer sr;
+
+    private bool flipped = true;
+
+
     void Update()
     {
         if (projectileStart)
         {
-            transform.position += (-1 * transform.right) * Time.deltaTime * projectileSpeed;
             if (Time.time - startTime >= projectileLifeTime)
             {
                 projectileStart = false;
@@ -51,13 +56,28 @@ public class Weapon : MonoBehaviour
         if (weaponType == WeaponType.Melee)
         {
             weaponHitBox.SetActive(true);
+            startTime = Time.time;
+            projectileStart = true;
         }
         else if (weaponType == WeaponType.Projectile)
         {
+            sr = GetComponent<SpriteRenderer>();
+            playerDirection = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+            if (playerDirection.right)
+            {
+                startPosition = Vector3.right;
+                startPosition.x = startPosition.x - 0.1f;
+                sr.flipX = !flipped;
+            } else
+            {
+                startPosition = Vector3.left;
+                startPosition.x = startPosition.x + 0.1f;
+                sr.flipX = flipped;
+            }
+            startPosition.y = startPosition.y - 0.2f;
             weaponHitBox.SetActive(true);
             startTime = Time.time;
             projectileStart = true;
-            startPosition = Vector3.zero;
             transform.localPosition = startPosition;
         }
 
