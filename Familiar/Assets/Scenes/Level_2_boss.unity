@@ -959,6 +959,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &576325252 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7793084983903948112, guid: 6230af392c22cd54792a5a7266c79c07, type: 3}
+  m_PrefabInstance: {fileID: 751488448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &681236658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,6 +1150,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7793084983903948115, guid: 6230af392c22cd54792a5a7266c79c07, type: 3}
   m_PrefabInstance: {fileID: 751488448}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &751488455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576325252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b244460e5b75a24d88b4d2e99041fbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WalkAudioClip: {fileID: 8300000, guid: 59359157d3d56c243affcdf37317aecb, type: 3}
+  LoopWalkAudio: 0
+  AttackAudioClip: {fileID: 0}
+  LoopAttackAudio: 0
+  DeathAudioClip: {fileID: 0}
+  LoopDeathAudio: 0
+  JumpAudioClip: {fileID: 8300000, guid: 65c0b11d2373f8a4c82e717f17d8607c, type: 3}
+  LoopJumpAudio: 0
+  VolumeLevel: 1
+  WalkSource: {fileID: 0}
+  AttackSource: {fileID: 0}
+  DeathSource: {fileID: 0}
+  JumpSource: {fileID: 0}
 --- !u!1 &800459836
 GameObject:
   m_ObjectHideFlags: 0
