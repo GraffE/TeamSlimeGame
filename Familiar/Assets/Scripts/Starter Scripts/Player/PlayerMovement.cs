@@ -90,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
                     isJumping = true;
                     canRayCastJump = false;
                     HandleJumpAudio();
-                   // Debug.Log("Managed to Jump");
+                    // Debug.Log("Managed to Jump");
                 }
                 else if(!useRayCastJumping && !isJumping)
                 {
@@ -231,7 +231,7 @@ public class PlayerMovement : MonoBehaviour
             Vector3 temp = p_collider.bounds.center;
             //temp.y += p_collider.bounds.extents.y;
             RaycastHit2D hit = Physics2D.BoxCast(temp, p_collider.bounds.size, 0.0f, Vector2.down, rayLength, groundLayer);
-            //Debug.DrawRay(temp, Vector2.down * rayLength, Color.red);
+            Debug.DrawRay(temp, Vector2.down * rayLength, Color.red);
             //RaycastHit2D hit = Physics2D.Raycast(p_collider.bounds.center, Vector2.down, rayLength, groundLayer);
             if (hit.collider != null )
             {
@@ -242,7 +242,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            if (rb.velocity.y < 0)
+            if (rb.velocity.y < -0.1)
             {
                 isJumping = true;
                 rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;

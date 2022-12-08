@@ -1,4 +1,7 @@
 [NAME=Old Cat][SPEAKERSPRITE=Old Cat]Hey there little kitty! Welcome into my cottage!
-[NAME=Old Cat][SPEAKERSPRITE=Old Cat]Use the platforms to move about the place and be sure to pick up some herbs on your way!
-[NAME=Old Cat][SPEAKERSPRITE=Old Cat]If you cross a fish, feel free to take a bite for your health!
-[NAME=Old Cat][SPEAKERSPRITE=Old Cat]Use the platforms to meander through my place, but watch out for the slime jellies along the way!
+[NAME=Old Cat][SPEAKERSPRITE=Old Cat]I know that you just got here, but can you please investigate this awful smell in the basement?
+[NAME=Old Cat][SPEAKERSPRITE=Old Cat]It's driving me crazy, but these slimes everywhere are making it hard for an old cat like me to get around.
+[NAME=Old Cat][SPEAKERSPRITE=Old Cat]If one gets too close to you, make sure to use your claws (Press E) to take them out.
+[NAME=Old Cat][SPEAKERSPRITE=Old Cat]Feel free to grab any herbs you see, they make a wonderful tea!
+[NAME=Old Cat][SPEAKERSPRITE=Old Cat]Also, if you cross a fish, feel free to take a bite for your health!
+[NAME=Old Cat][SPEAKERSPRITE=Old Cat]Thank you, and good luck!
