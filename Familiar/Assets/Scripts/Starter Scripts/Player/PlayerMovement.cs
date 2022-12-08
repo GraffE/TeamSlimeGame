@@ -69,6 +69,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
         float HorizontalMovement = 0;
         float VerticleMovement = 0;
         float JumpMovement = 0;
