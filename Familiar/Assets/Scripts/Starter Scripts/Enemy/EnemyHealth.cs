@@ -9,15 +9,23 @@ public class EnemyHealth : MonoBehaviour
 
     public int currentHealth;
 
+    private SpriteRenderer sr;
+
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
+        sr = GetComponent<SpriteRenderer>();
     }
 
     public void DecreaseHealth(int value)
     {
         currentHealth -= value;
+        if (currentHealth == 1)
+        {
+            sr.color = new Color(255, 0, 0);
+        }
         if (currentHealth <= 0)
         {
             currentHealth = 0;
